@@ -1,5 +1,6 @@
 {
 	"name" : "jijihohococo/myanmar-alphabet-sorting",
+	"type": "library",
 	"description": "Myanmar Alphabet Sorting for PHP",
 	"keywords": ["myanmar alphabet sorting","myanmar alphabet sorting for php","php"],
 	"license": "MIT",
