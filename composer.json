@@ -2,6 +2,7 @@
 	"name" : "jijihohococo/myanmar-alphabet-sorting",
 	"description": "Myanmar Alphabet Sorting for PHP",
 	"keywords": ["myanmar alphabet sorting","myanmar alphabet sorting for php","php"],
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Lin Aung",
