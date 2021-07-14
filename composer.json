@@ -17,5 +17,6 @@
         "psr-4": {
             "JiJiHoHoCoCo\\MyanmarAlphabetSorting\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
