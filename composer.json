@@ -1,0 +1,19 @@
+{
+	"name" : "jijihohococo/myanmar-alphabet-sorting",
+	"description": "Myanmar Alphabet Sorting for PHP",
+	"keywords": ["myanmar alphabet sorting","php"],
+	"authors": [
+		{
+			"name": "Lin Aung",
+			"email": "jijihohococo@gmail.com"
+		}
+	],
+	"require": {
+		"php": "^7.2|^8.0"
+	},
+	"autoload": {
+        "psr-4": {
+            "JiJiHoHoCoCo\\MyanmarAlphabetSorting\\": "src/"
+        }
+    }
+}
