@@ -176,7 +176,19 @@ class Sorting{
 			}
 		}
 
-		public static function sort(array $alphabets,$order="aesc") {
+		public static function ascendingOrder(array $alphabets){
+			$resultArray=self::sort($alphabets);
+			ksort($resultArray);
+			return array_values($resultArray);
+		}
+
+		public static function descendingOrder(array $alphabets){
+			$resultArray=self::sort($alphabets);
+			krsort($resultArray);
+			return array_values($resultArray);
+		}
+
+		private static function sort(array $alphabets) {
 			$result=[];
 			foreach($alphabets as $key => $alphabet){
 				$letterArray=explode('\\', substr(json_encode($alphabet), 1,-1) );
@@ -187,11 +199,6 @@ class Sorting{
 						$result["u".$arrayNumber]=$alphabet;
 					}
 				}
-			}
-			if($order=="aesc"){
-				ksort($result);
-			}else{
-				krsort($result);
 			}
 			return $result;
 

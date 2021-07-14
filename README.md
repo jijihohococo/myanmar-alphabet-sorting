@@ -3,7 +3,7 @@
 <i>It is only supported for Pyidaung Hsu Unicode Font. Other unicode formats are not tested yet.</i>
 
 ## Usage
-<p>You can sort Myanmar Alphabets like below</p>
+<p>You can sort Myanmar Alphabets like below in ascending order</p>
 
 ```php
 use JiJiHoHoCoCo\MyanmarAlphabetSorting\Sorting;
@@ -16,11 +16,11 @@ $array=[ "က",
 "ကူ",
 "ကူး",
 "ကာ"];
-Sorting::sort($array);
+Sorting::ascendingOrder($array);
 ```
 
-<p>Above code will sort in ascending order. If you want to sort descending order, you can do like below</p>
+<p>You can sort Myanmar Alphabets like below in descending order</p>
 
 ```php
-Sorting::sort($array,'desc');
+Sorting::descendingOrder($array);
 ```
