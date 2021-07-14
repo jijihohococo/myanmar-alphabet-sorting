@@ -6,6 +6,25 @@
 
 This package is Open Source According to [MIT license](LICENSE.md)
 
+## Installing Library Via Composer
+
+<p>Firstly, you need to add some data in your repositories of composer.json as shown as below</p>
+
+```php
+"repositories": [
+        {
+            "name": "jijihohococo/myanmar-alphabet-sorting",
+            "type": "vcs",
+            "url": "git@github.com:jijihohococo/myanmar-alphabet-sorting.git"
+        }
+    ],
+```
+<p>And then, run below code in command line.</p>
+
+```php
+composer require jijihohococo/myanmar-alphabet-sorting
+```
+
 ## Usage
 <p>You can sort Myanmar Alphabets like below in ascending order</p>
 
