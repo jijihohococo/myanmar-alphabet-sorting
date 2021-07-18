@@ -20,86 +20,76 @@ $array=[ "က",
 $ascendingSortedArray=[
 "က","က","ကာ","ကား","ကိ","ကီ","ကု","ကူ","ကူး","ကေ"
 ];
-print_r(Sorting::ascendingOrderZawgyi(["က",
-"ကား",
-"ကိ",
-"ကီ",
-"ေက",
-"ကု",
-"ကူ",
-"ကူး",
-"က",
-"ကတ္",
-"ကာ"]));
 
-// $descendingSortedArray=[
-// "ကေ","ကူး","ကူ","ကု","ကီ","ကိ","ကား","ကာ","က","က"
-// ];
 
-// $multiDimensionalArray=[
-// ['name'=>'ကေကေ',"age"=>'12'],
-// ['name'=>'ကီကီ','age'=>'14'],
-// ['name'=>'ကူးကူး','age'=>'13']
-// ];
+$descendingSortedArray=[
+"ကေ","ကူး","ကူ","ကု","ကီ","ကိ","ကား","ကာ","က","က"
+];
 
-// $ascendingMultiDimensioanlArray=[
-// ['name'=>'ကီကီ','age'=>'14'],
-// ['name'=>'ကူးကူး','age'=>'13'],
-// ['name'=>'ကေကေ',"age"=>'12']
-// ];
+$multiDimensionalArray=[
+['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကီကီ','age'=>'14'],
+['name'=>'ကူးကူး','age'=>'13']
+];
 
-// $descendingMultiDimensioanlArray=[
-// ['name'=>'ကေကေ',"age"=>'12'],
-// ['name'=>'ကူးကူး','age'=>'13'],
-// ['name'=>'ကီကီ','age'=>'14']
-// ];
+$ascendingMultiDimensioanlArray=[
+['name'=>'ကီကီ','age'=>'14'],
+['name'=>'ကူးကူး','age'=>'13'],
+['name'=>'ကေကေ',"age"=>'12']
+];
 
-// $duplicatedMultiDimensionalArray=[
-// ['name'=>'ကေကေ',"age"=>'12'],
-// ['name'=>'ကီကီ','age'=>'14'],
-// ['name'=>'ကူးကူး','age'=>'13'],
-// ['name'=>'ကီကီ','age'=>'20']
-// ];
+$descendingMultiDimensioanlArray=[
+['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကူးကူး','age'=>'13'],
+['name'=>'ကီကီ','age'=>'14']
+];
 
-// $ascendingDuplicatedMultiDimensionalArray=[
-// ['name'=>'ကီကီ','age'=>'14'],
-// ['name'=>'ကီကီ','age'=>'20'],
-// ['name'=>'ကူးကူး','age'=>'13'],
-// ['name'=>'ကေကေ',"age"=>'12']
-// ];
+$duplicatedMultiDimensionalArray=[
+['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကီကီ','age'=>'14'],
+['name'=>'ကူးကူး','age'=>'13'],
+['name'=>'ကီကီ','age'=>'20']
+];
 
-// $descendingDuplicatedMultiDimensionalArray=[
-// ['name'=>'ကေကေ',"age"=>'12'],
-// ['name'=>'ကူးကူး','age'=>'13'],
-// ['name'=>'ကီကီ','age'=>'20'],
-// ['name'=>'ကီကီ','age'=>'14']
-// ];
+$ascendingDuplicatedMultiDimensionalArray=[
+['name'=>'ကီကီ','age'=>'14'],
+['name'=>'ကီကီ','age'=>'20'],
+['name'=>'ကူးကူး','age'=>'13'],
+['name'=>'ကေကေ',"age"=>'12']
+];
+
+$descendingDuplicatedMultiDimensionalArray=[
+['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကူးကူး','age'=>'13'],
+['name'=>'ကီကီ','age'=>'20'],
+['name'=>'ကီကီ','age'=>'14']
+];
 
 
 
 
-// if($ascendingSortedArray==Sorting::ascendingOrder($array)){
-// 	echo "Testing Myanmar alphabet sorting in ascending order is passed.\n";
-// }
+if($ascendingSortedArray==Sorting::ascendingOrder($array)){
+	echo "Testing Myanmar alphabet sorting in ascending order is passed.\n";
+}
 
-// if($descendingSortedArray==Sorting::descendingOrder($array)){
-// 	echo "Testing Myanmar alphabet sorting in descending order is passed.\n";
-// }
+if($descendingSortedArray==Sorting::descendingOrder($array)){
+	echo "Testing Myanmar alphabet sorting in descending order is passed.\n";
+}
 
-// if($ascendingMultiDimensioanlArray==Sorting::ascendingMulti($multiDimensionalArray,'name')){
-// echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in ascending order is passed.\n";
-// }
+if($ascendingMultiDimensioanlArray==Sorting::ascendingMulti($multiDimensionalArray,'name')){
+echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in ascending order is passed.\n";
+}
 
-// if($descendingMultiDimensioanlArray==Sorting::descendingMulti($multiDimensionalArray,'name')){
-// echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in descending order is passed.\n";
-// }
+if($descendingMultiDimensioanlArray==Sorting::descendingMulti($multiDimensionalArray,'name')){
+echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in descending order is passed.\n";
+}
 
-// if($ascendingDuplicatedMultiDimensionalArray==Sorting::ascendingMulti($duplicatedMultiDimensionalArray,'name')){
-// echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in ascending order is passed.\n";
-// }
+if($ascendingDuplicatedMultiDimensionalArray==Sorting::ascendingMulti($duplicatedMultiDimensionalArray,'name')){
+echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in ascending order is passed.\n";
+}
 
-// if($descendingDuplicatedMultiDimensionalArray==Sorting::descendingMulti($duplicatedMultiDimensionalArray,'name')){
-// echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in descending order is passed.\n";
+if($descendingDuplicatedMultiDimensionalArray==Sorting::descendingMulti($duplicatedMultiDimensionalArray,'name')){
+echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in descending order is passed.\n";
 
-// }
+}
 
