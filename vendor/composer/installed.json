@@ -1,0 +1,105 @@
+[
+    {
+        "name": "googlei18n/myanmar-tools",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/google/myanmar-tools.git",
+            "reference": "355f4ffb3d1f258b7e9dbef569d307082cb89a15"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/google/myanmar-tools/zipball/355f4ffb3d1f258b7e9dbef569d307082cb89a15",
+            "reference": "355f4ffb3d1f258b7e9dbef569d307082cb89a15",
+            "shasum": ""
+        },
+        "require": {
+            "ext-intl": "*",
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6"
+        },
+        "time": "2021-06-23T01:10:02+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Googlei18n\\MyanmarTools\\": "clients/php/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "SteveNay",
+                "email": "stevenaylinaung@gmail.com"
+            }
+        ],
+        "description": "Zawgyi and Unicode Font Detector using Markov Model (Machine Learning)",
+        "homepage": "http://stevenay.wordpress.com",
+        "keywords": [
+            "detector",
+            "myanmar-font",
+            "myanmar-tools",
+            "unicode",
+            "zawgyi"
+        ]
+    },
+    {
+        "name": "stevenay/myanfont",
+        "version": "v0.2.0",
+        "version_normalized": "0.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stevenay/myanfont.git",
+            "reference": "2ab4d55f010fff093a9b496f081e71c4303728fb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stevenay/myanfont/zipball/2ab4d55f010fff093a9b496f081e71c4303728fb",
+            "reference": "2ab4d55f010fff093a9b496f081e71c4303728fb",
+            "shasum": ""
+        },
+        "require": {
+            "googlei18n/myanmar-tools": ">=0.1.0",
+            "php": ">=7.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "6.4"
+        },
+        "time": "2019-09-02T13:59:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "SteveNay\\MyanFont\\": "src/"
+            },
+            "files": [
+                "./src/MyanRabbit.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "SteveNay",
+                "email": "stevenaylinaung@gmail.com"
+            }
+        ],
+        "description": "Zawgyi and Unicode Font Detector and Converter",
+        "homepage": "https://github.com/stevenay/myanfont",
+        "keywords": [
+            "converter",
+            "detector",
+            "myanmar-font",
+            "unicode",
+            "zawgyi"
+        ]
+    }
+]

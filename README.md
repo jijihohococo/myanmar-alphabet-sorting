@@ -1,6 +1,5 @@
 # Myanmar Alphabet Sorting for PHP
-<p>This library is aimed to sort Myanmar Alphabets Array in PHP</p>
-<i>It is only supported for Pyidaung Hsu Unicode Font. Other unicode formats are not tested yet.</i>
+<p>This library is aimed to sort Myanmar Alphabets (both Unicode and Zawgyi Code) Array in PHP</p>
 
 ## License
 
@@ -83,5 +82,7 @@ https://jrgraphix.net/r/Unicode/1000-109F
 https://my.wiktionary.org/wiki/%E1%80%9D%E1%80%85%E1%80%BA%E1%80%9B%E1%80%BE%E1%80%84%E1%80%BA%E1%80%94%E1%80%9B%E1%80%AE:%E1%80%9E%E1%80%90%E1%80%BA%E1%80%95%E1%80%AF%E1%80%B6
 
 https://unicode.org/charts/PDF/UAA60.pdf
+
+https://my.wikipedia.org/wiki/%E1%80%9D%E1%80%AE%E1%80%80%E1%80%AE%E1%80%95%E1%80%AE%E1%80%B8%E1%80%92%E1%80%AE%E1%80%B8%E1%80%9A%E1%80%AC%E1%80%B8:Font
 
 ### Hope you enjoy!
