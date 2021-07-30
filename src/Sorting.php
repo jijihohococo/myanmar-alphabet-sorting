@@ -30,7 +30,7 @@ class Sorting{
 		foreach ($letterArray as $letter) {
 			switch($letter){
 				case 'u1033':
-				$letter="u102F";
+				$letter="u102f";
 				break;
 
 				case "u1034":
@@ -38,31 +38,31 @@ class Sorting{
 				break;
 
 				case 'u1039':
-				$letter='u103A';
+				$letter='u103a';
 				break;
 
-				case 'u103A':
-				$letter='u103B';
+				case 'u103a':
+				$letter='u103b';
 				break;
 
-				case 'u103B':
-				$letter='u103C';
+				case 'u103b':
+				$letter='u103c';
 				break;
 
-				case 'u103C':
-				$letter='u103D';
+				case 'u103c':
+				$letter='u103d';
 				break;
 
-				case 'u103D':
-				$letter='u103E';
+				case 'u103d':
+				$letter='u103e';
 				break;
 
-				case 'u104E':
-				$letter="u104E" . "u1004"."u1039"."u1038";
+				case 'u104e':
+				$letter="u104e" . "u1004"."u1039"."u1038";
 				break;
 
-				case 'u105A':
-				$letter="u102B" . "u103A";
+				case 'u105a':
+				$letter="u102b" . "u103a";
 				break;
 
 				case 'u1060':
@@ -82,7 +82,7 @@ class Sorting{
 				break;
 
 				case 'u1064':
-				$letter='u1004'.'u103A'.'u1039';
+				$letter='u1004'.'u103a'.'u1039';
 				break;
 
 				case 'u1065':
@@ -102,33 +102,33 @@ class Sorting{
 				$letter='u1039' . 'u1008';
 				break;
 
-				case 'u106A':
+				case 'u106a':
 				$letter='u1009' . 'u1039';
 				break;
 
-				case 'u106B':
-				$letter='u100A' . 'u1039';
+				case 'u106b':
+				$letter='u100a' . 'u1039';
 				break;
 
-				case 'u106C':
-				$letter='u1039' . 'u100B';
+				case 'u106c':
+				$letter='u1039' . 'u100b';
 				break;
 
-				case 'u106D':
-				$letter='u1039' . 'u100C';
+				case 'u106d':
+				$letter='u1039' . 'u100c';
 				break;
 
-				case 'u106E':
-				$letter='u100B'.'u1039'.'u100B';
+				case 'u106e':
+				$letter='u100b'.'u1039'.'u100b';
 				break;
 
-				case 'u106F':
-				$letter='u100D' . 'u1039' . 'u100E';
+				case 'u106f':
+				$letter='u100d' . 'u1039' . 'u100e';
 				break;
 
 
 				case 'u1070':
-				$letter='u1039' . 'u100F';
+				$letter='u1039' . 'u100f';
 				break;
 
 				case 'u1071':
@@ -161,88 +161,88 @@ class Sorting{
 				$letter='u1039' . 'u1016';
 				break;
 
-				case 'u107A':
+				case 'u107a':
 				$letter='u1039' . 'u1017';
 				break;
 
-				case 'u107B':
+				case 'u107b':
 				case 'u1093':
 				$letter='u1039' . 'u1018';
 				break;
 
-				case 'u107C':
+				case 'u107c':
 				$letter='u1039' . 'u1019';
 				break;
 
-				case 'u107D':
-				$letter='u1039' . 'u103B';
+				case 'u107d':
+				$letter='u1039' . 'u103b';
 				break;
 
 
-				case 'u107E':
-				case 'u107F':
+				case 'u107e':
+				case 'u107f':
 				case 'u1080':
 				case 'u1081':
 				case 'u1082':
 				case 'u1083':
 				case 'u1084':
-				$letter='u103B';
+				$letter='u103b';
 				break;
 
 				case 'u1085':
-				$letter='u1039'.'u101C';
+				$letter='u1039'.'u101c';
 				break;
 
 				case 'u1086':
-				$letter="u103F";
+				$letter="u103f";
 				break;
 
 				case 'u1087':
-				$letter='u103E';
+				$letter='u103e';
 				break;
 
 				case 'u1088':
-				$letter='u103E'.'u102F';
+				$letter='u103e'.'u102f';
 				break;
 
 				case 'u1089':
-				$letter='u103E'.'u1030';
+				$letter='u103e'.'u1030';
 				break;
 
-				case 'u108A':
-				$letter="u103C" . "u103D";
+				case 'u108a':
+				$letter="u103c" . "u103d";
 				break;
 
-				case 'u108B':
-				$letter='u1004'.'u103A'.'u1039'.'u102D';
+				case 'u108b':
+				$letter='u1004'.'u103a'.'u1039'.'u102d';
 				break;
 
-				case 'u108C':
-				$letter='u1004'.'u103A'.'u1039'.'u102E';
+				case 'u108c':
+				$letter='u1004'.'u103a'.'u1039'.'u102e';
 				break;
 
-				case 'u108D':
-				$letter='u1004' . 'u103A' . 'u1039' . 'u1036';
+				case 'u108d':
+				$letter='u1004' . 'u103a' . 'u1039' . 'u1036';
 				break;
 
-				case 'u108E':
-				$letter='u102D' . 'u1036';
+				case 'u108e':
+				$letter='u102d' . 'u1036';
 				break;
 
-				case 'u108F':
+				case 'u108f':
 				$letter='u1014'. 'u1039';
 				break;
 
 				case 'u1090':
-				$letter='u101B' . 'u1039';
+				$letter='u101b' . 'u1039';
 				break;
 
 				case 'u1091':
-				$letter='u100F'. 'u1039' . 'u100D';
+				$letter='u100f'. 'u1039' . 'u100d';
 				break;
 
 				case 'u1092':
-				$letter='u100B' . 'u1039' . 'u100C';
+				$letter='u100b' . 'u1039' . 'u100c';
 				break;
 
 				case 'u1094':
@@ -251,11 +251,11 @@ class Sorting{
 				break;
 
 				case 'u1096':
-				$letter='u1039' . 'u1010' . 'u103D';
+				$letter='u1039' . 'u1010' . 'u103d';
 				break;
 
 				case 'u1097':
-				$letter='u100B' . 'u1039';
+				$letter='u100b' . 'u1039';
 				break;
 			}
 			$arrayNumber .= $letter;
