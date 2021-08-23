@@ -17,8 +17,10 @@ class Sorting{
 
 	private static function check(array $letterArray){
 		$arrayNumber=null;
-		foreach($letterArray as $letter){
-			$arrayNumber .= $letter;
+		foreach(array_chunk($letterArray,10,true) as $letterChunk){
+			foreach($letterChunk  as $letter){
+				$arrayNumber .= $letter;
+			}
 		}
 		if($arrayNumber!==null){
 			return $arrayNumber;
@@ -280,17 +282,23 @@ class Sorting{
 		
 		if(checkUnique($dataArray) ){
 			
-			foreach(array_count_values($dataArray) as  $dKey => $value){
-				if($value>1){
-					$arrayCountValue[$dKey]=$value;
+			foreach(array_chunk(array_count_values($dataArray),10,true) as $valueChunk){
+				foreach($valueChunk as $dKey => $value){
+					if($value>1){
+						$arrayCountValue[$dKey]=$value;
+					}
 				}
 			}
-			foreach($arrayCountValue as $cKey => $cValue){
-				foreach(range(1,$cValue) as $rangeValue){
-					$changedData=' -'.changeMMNumber($rangeValue);
-					$multiArray[array_search($cKey, array_column($multiArray, $key ))][$key]=$cKey . $changedData;
-					$originalArray[]=$cKey;
-					$changedArray[]=$changedData;
+			foreach(array_chunk($arrayCountValue,10,true) as $cChunk){
+				foreach($cChunk as $cKey =>  $cValue){
+					foreach(array_chunk(range(1,$cValue),10,true) as $rangeChunk){
+						foreach($rangeChunk as  $rangeValue){
+							$changedData=' -'.changeMMNumber($rangeValue);
+							$multiArray[array_search($cKey, array_column($multiArray, $key ))][$key]=$cKey . $changedData;
+							$originalArray[]=$cKey;
+							$changedArray[]=$changedData;
+						}
+					}
 				}
 			}
 			$dataArray=makeDataArray($multiArray,$key);
@@ -298,20 +306,27 @@ class Sorting{
 
 		$newData=self::{$method}($dataArray);
 		
-		foreach($newData as $k => $data){
-			$arrayNumber[]=array_search($data, array_column($multiArray, $key));
+		foreach(array_chunk($newData, 10,true)  as $newChunk ){
+			foreach($newChunk as $k => $data){
+				$arrayNumber[]=array_search($data, array_column($multiArray, $key));
+			}
 		}
-		foreach($multiArray as $dataKey => $d){
-			$multiData=$multiArray[$arrayNumber[$dataKey]];
-			if(!empty($arrayCountValue) ){
-				foreach ($changedArray as $changedKey => $changed ) {
-					if(strpos($multiData[$key], $changed )==TRUE){
-						$changedString=$originalArray[$changedKey] . $changed;
-						$multiData[$key]=substr($changedString, 0, strpos($changedString, $changed ));
+
+		foreach(array_chunk($multiArray,10,true) as $multiArrayChunk){
+			foreach($multiArrayChunk as $dataKey => $d){
+				$multiData=$multiArray[$arrayNumber[$dataKey]];
+				if(!empty($arrayCountValue) ){
+					foreach(array_chunk($changedArray, 10,true)  as  $changedArrayChunk  ){
+						foreach ($changedArrayChunk as $changedKey => $changed ) {
+							if(strpos($multiData[$key], $changed )==TRUE){
+								$changedString=$originalArray[$changedKey] . $changed;
+								$multiData[$key]=substr($changedString, 0, strpos($changedString, $changed ));
+							}
+						}
 					}
 				}
+				$result[]=$multiData;
 			}
-			$result[]=$multiData;
 		}
 
 		return $result;
@@ -331,16 +346,18 @@ class Sorting{
 
 	private static function sort(array $alphabets) {
 		$result=[];
-		foreach($alphabets as $key => $alphabet){
-			$letterArray=convertCharacterToCodeArray($alphabet);
-			
-			if( isset($letterArray[0]) ){
-				if(isset($letterArray[1])){
-					unset($letterArray[0]);
-				}
-				$arrayNumber=MyanFont::fontDetectByRegularExpression($alphabet)=="Zawgyi"? self::checkZawgyi($letterArray) : self::check($letterArray);
-				if($arrayNumber!==null){
-					$result[$arrayNumber.$key]=$alphabet;
+		foreach(array_chunk($alphabets,10,true) as $chunkAlphabet){
+			foreach($chunkAlphabet as $key  => $alphabet){
+				$letterArray=convertCharacterToCodeArray($alphabet);
+
+				if( isset($letterArray[0]) ){
+					if(isset($letterArray[1])){
+						unset($letterArray[0]);
+					}
+					$arrayNumber=MyanFont::fontDetectByRegularExpression($alphabet)=="Zawgyi"? self::checkZawgyi($letterArray) : self::check($letterArray);
+					if($arrayNumber!==null){
+						$result[$arrayNumber.$key]=$alphabet;
+					}
 				}
 			}
 		}
