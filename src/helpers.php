@@ -21,8 +21,10 @@ function checkUnique(array $dataArray){
 
 function makeDataArray(array $multiArray,$key){
 	$dataArray=[];
-	foreach ($multiArray as $value) {
-		$dataArray[]=$value[$key];
+	foreach(array_chunk($multiArray, 10,true) as $multiArrayChunk ){
+		foreach ($multiArrayChunk as $value) {
+			$dataArray[]=$value[$key];
+		}
 	}
 	return $dataArray;
 }
