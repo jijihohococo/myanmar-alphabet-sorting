@@ -16,14 +16,14 @@ function convertCharacterToCodeArray($alphabet){
 }
 
 function checkUnique(array $dataArray){
-	return $dataArray!==array_unique($dataArray);
+	return $dataArray !== array_unique($dataArray);
 }
 
 function makeDataArray(array $multiArray,$key){
-	$dataArray=[];
+	$dataArray = [];
 	foreach(array_chunk($multiArray, 10,true) as $multiArrayChunk ){
 		foreach ($multiArrayChunk as $value) {
-			$dataArray[]=$value[$key];
+			$dataArray[] = $value[$key];
 		}
 	}
 	return $dataArray;
