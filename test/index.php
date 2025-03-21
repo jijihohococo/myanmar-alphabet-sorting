@@ -25,7 +25,7 @@ $descendingSortedArray = [
 ];
 
 $multiDimensionalArray = [
-['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကေကေ','age'=>'12'],
 ['name'=>'ကီကီ','age'=>'14'],
 ['name'=>'ကူးကူး','age'=>'13']
 ];
@@ -37,13 +37,13 @@ $ascendingMultiDimensioanlArray = [
 ];
 
 $descendingMultiDimensioanlArray = [
-['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကေကေ','age'=>'12'],
 ['name'=>'ကူးကူး','age'=>'13'],
 ['name'=>'ကီကီ','age'=>'14']
 ];
 
 $duplicatedMultiDimensionalArray = [
-['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကေကေ','age'=>'12'],
 ['name'=>'ကီကီ','age'=>'14'],
 ['name'=>'ကူးကူး','age'=>'13'],
 ['name'=>'ကီကီ','age'=>'20']
@@ -57,7 +57,7 @@ $ascendingDuplicatedMultiDimensionalArray = [
 ];
 
 $descendingDuplicatedMultiDimensionalArray = [
-['name'=>'ကေကေ',"age"=>'12'],
+['name'=>'ကေကေ','age'=>'12'],
 ['name'=>'ကူးကူး','age'=>'13'],
 ['name'=>'ကီကီ','age'=>'20'],
 ['name'=>'ကီကီ','age'=>'14']
