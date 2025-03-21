@@ -1,0 +1,36 @@
+name: PHP Tests
+
+on:
+  push:
+    branches:
+      - '*'  # Trigger on push to any branch
+  pull_request:
+    branches:
+      - '*'  # Trigger on PR to any branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # This sets up a job to run on the latest version of Ubuntu
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up PHP
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'  # Use the PHP version required for your tests
+          extensions: mbstring, xml, curl  # Add any PHP extensions you need
+
+      # Step 3: Update dependencies
+      - name: Run Composer update
+        run: |
+          curl -sS https://getcomposer.org/installer | php
+          php composer.phar update --with-all-dependencies  # Update dependencies
+
+      # Step 4: Run your custom PHP test file
+      - name: Run custom PHP test
+        run: |
+          php test/index.php

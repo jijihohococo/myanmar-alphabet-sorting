@@ -264,7 +264,7 @@ class Sorting{
 				$arrayNumber .= $letter;
 			}
 		}
-		if($arrayNumber!==null){
+		if($arrayNumber !== null){
 			return $arrayNumber;
 		}
 	}
@@ -300,7 +300,7 @@ class Sorting{
 					foreach(array_chunk(range(1,$cValue),10,true) as $rangeChunk){
 						foreach($rangeChunk as  $rangeValue){
 							$changedData = ' -'.changeMMNumber($rangeValue);
-							$multiArray[array_search($cKey, array_column($multiArray, $key ))][$key]=$cKey . $changedData;
+							$multiArray[array_search($cKey, array_column($multiArray, $key ))][$key] = $cKey . $changedData;
 							$originalArray[] = $cKey;
 							$changedArray[] = $changedData;
 						}
@@ -324,7 +324,7 @@ class Sorting{
 				if(!empty($arrayCountValue) ){
 					foreach(array_chunk($changedArray, 10,true)  as  $changedArrayChunk  ){
 						foreach ($changedArrayChunk as $changedKey => $changed ) {
-							if(strpos($multiData[$key], $changed )==TRUE){
+							if(strpos($multiData[$key], $changed ) == TRUE){
 								$changedString = $originalArray[$changedKey] . $changed;
 								$multiData[$key] = substr($changedString, 0, strpos($changedString, $changed ));
 							}
@@ -360,7 +360,7 @@ class Sorting{
 					if(isset($letterArray[1])){
 						unset($letterArray[0]);
 					}
-					$arrayNumber = MyanFont::fontDetectByRegularExpression($alphabet)=="Zawgyi"? self::checkZawgyi($letterArray) : self::check($letterArray);
+					$arrayNumber = MyanFont::fontDetectByRegularExpression($alphabet) == "Zawgyi" ? self::checkZawgyi($letterArray) : self::check($letterArray);
 					if($arrayNumber !== null){
 						$result[$arrayNumber.$key] = $alphabet;
 					}
