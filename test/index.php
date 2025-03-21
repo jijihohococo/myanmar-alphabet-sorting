@@ -56,19 +56,19 @@ $multiDimensionalZawgyiArray = [
 ['name'=>'ကူးကူး','age'=>'13']
 ];
 
-$ascendingMultiDimensioanlArray = [
+$ascendingMultiDimensionalArray = [
 ['name'=>'ကီကီ','age'=>'14'],
 ['name'=>'ကူးကူး','age'=>'13'],
 ['name'=>'ကေကေ',"age"=>'12']
 ];
 
-$ascendingMultiDimensioanlZawgyiArray = [
+$ascendingMultiDimensionalZawgyiArray = [
 ['name'=>'ကီကီ','age'=>'14'],
 ['name'=>'ကူးကူး','age'=>'13'],
 ['name'=>'ေကေက',"age"=>'12']
 ];
 
-$descendingMultiDimensioanlArray = [
+$descendingMultiDimensionalArray = [
 ['name'=>'ကေကေ','age'=>'12'],
 ['name'=>'ကူးကူး','age'=>'13'],
 ['name'=>'ကီကီ','age'=>'14']
@@ -150,59 +150,59 @@ if ( $descendingSortedZawgyiArray == Sorting::descendingOrder($zawgyiArray) ){
 	$error = true;
 }
 
-if($ascendingMultiDimensioanlArray == Sorting::ascendingMulti($multiDimensionalArray,'name')){
-	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in ascending order is passed.\n";
+if($ascendingMultiDimensionalArray == Sorting::ascendingMulti($multiDimensionalArray,'name')){
+	echo "Testing Myanmar alphabet sorting by field name in multi dimensional array in ascending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in ascending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting by field name in multi dimensional array in ascending order is not passed.\n";
 	$error = true;
 }
 
-if($ascendingMultiDimensioanlZawgyiArray == Sorting::ascendingMulti($multiDimensionalZawgyiArray,'name')){
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensioanl array in ascending order is passed.\n";
+if($ascendingMultiDimensionalZawgyiArray == Sorting::ascendingMulti($multiDimensionalZawgyiArray,'name')){
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensional array in ascending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensioanl array in ascending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensional array in ascending order is not passed.\n";
 	$error = true;
 }
 
-if($descendingMultiDimensioanlArray == Sorting::descendingMulti($multiDimensionalArray,'name')){
-	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in descending order is passed.\n";
+if($descendingMultiDimensionalArray == Sorting::descendingMulti($multiDimensionalArray,'name')){
+	echo "Testing Myanmar alphabet sorting by field name in multi dimensional array in descending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in descending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting by field name in multi dimensional array in descending order is not passed.\n";
 	$error = true;
 }
 
-if($descendingMultiDimensioanlZawgyiArray == Sorting::descendingMulti($multiDimensionalZawgyiArray,'name')){
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensioanl array in descending order is passed.\n";
+if($descendingMultiDimensionalZawgyiArray == Sorting::descendingMulti($multiDimensionalZawgyiArray,'name')){
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensional array in descending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensioanl array in descending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in multi dimensional array in descending order is not passed.\n";
 	$error = true;
 }
 
 if($ascendingDuplicatedMultiDimensionalArray == Sorting::ascendingMulti($duplicatedMultiDimensionalArray,'name')){
-	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in ascending order is passed.\n";
+	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensional array in ascending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in ascending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensional array in ascending order is not passed.\n";
 	$error = true;
 }
 
 if($ascendingDuplicatedMultiDimensionalZawgyiArray == Sorting::ascendingMulti($duplicatedMultiDimensionalZawgyiArray,'name')){
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensioanl array in ascending order is passed.\n";
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensional array in ascending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensioanl array in ascending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensional array in ascending order is not passed.\n";
 	$error = true;
 }
 
 if($descendingDuplicatedMultiDimensionalArray == Sorting::descendingMulti($duplicatedMultiDimensionalArray,'name')){
-	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in descending order is passed.\n";
+	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensional array in descending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in descending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensional array in descending order is not passed.\n";
 	$error = true;
 }
 
 if($descendingDuplicatedMultiDimensionalZawgyiArray == Sorting::descendingMulti($duplicatedMultiDimensionalZawgyiArray,'name')){
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensioanl array in descending order is passed.\n";
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensional array in descending order is passed.\n";
 } else {
-	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensioanl array in descending order is not passed.\n";
+	echo "Testing Myanmar alphabet sorting with zawgyi font by field name in duplicated value in multi dimensional array in descending order is not passed.\n";
 	$error = true;
 }
 
