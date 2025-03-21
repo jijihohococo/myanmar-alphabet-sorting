@@ -17,13 +17,31 @@ $array = [ "က",
 "က",
 "ကာ"];
 
+$zawgyiArray = [ "က",
+"ကား",
+"ကိ",
+"ကီ",
+"ေက",
+"ကု",
+"ကူ",
+"ကူး",
+"က",
+"ကာ"];
+
 $ascendingSortedArray = [
 "က","က","ကာ","ကား","ကိ","ကီ","ကု","ကူ","ကူး","ကေ"
 ];
 
+$ascendingSortedZawgyiArray = [
+"က","က","ကာ","ကား","ကိ","ကီ","ကု","ကူ","ကူး","ေက"
+];
 
 $descendingSortedArray = [
 "ကေ","ကူး","ကူ","ကု","ကီ","ကိ","ကား","ကာ","က","က"
+];
+
+$descendingSortedZawgyiArray = [
+"ေက","ကူး","ကူ","ကု","ကီ","ကိ","ကား","ကာ","က","က"
 ];
 
 $multiDimensionalArray = [
@@ -65,17 +83,31 @@ $descendingDuplicatedMultiDimensionalArray = [
 ['name'=>'ကီကီ','age'=>'14']
 ];
 
-if($ascendingSortedArray == Sorting::ascendingOrder($array)){
+if( $ascendingSortedArray == Sorting::ascendingOrder($array) ){
 	echo "Testing Myanmar alphabet sorting in ascending order is passed.\n";
 } else {
 	echo "Testing Myanmar alphabet sorting in ascending order is not passed.\n";
 	$error = true;
 }
 
-if($descendingSortedArray == Sorting::descendingOrder($array)){
+if ( $ascendingSortedZawgyiArray == Sorting::ascendingOrder($zawgyiArray) ){
+	echo "Testing Myanmar alphabet sorting with zawgyi font in ascending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting with zawgyi font in ascending order is not passed.\n";
+	$error = true;
+}
+
+if( $descendingSortedArray == Sorting::descendingOrder($array) ){
 	echo "Testing Myanmar alphabet sorting in descending order is passed.\n";
 } else {
 	echo "Testing Myanmar alphabet sorting in descending order is not passed.\n";
+	$error = true;
+}
+
+if ( $descendingSortedZawgyiArray == Sorting::descendingOrder($zawgyiArray) ){
+	echo "Testing Myanmar alphabet sorting with zawgyi font in descending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting with zawgyi font in descending order is not passed.\n";
 	$error = true;
 }
 
