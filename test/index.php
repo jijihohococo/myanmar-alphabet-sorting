@@ -4,6 +4,8 @@ require_once  __DIR__.'/../src/Sorting.php';
 
 use JiJiHoHoCoCo\MyanmarAlphabetSorting\Sorting;
 
+$error = false;
+
 $array = [ "က",
 "ကား",
 "ကိ",
@@ -63,30 +65,49 @@ $descendingDuplicatedMultiDimensionalArray = [
 ['name'=>'ကီကီ','age'=>'14']
 ];
 
-
-
-
 if($ascendingSortedArray == Sorting::ascendingOrder($array)){
 	echo "Testing Myanmar alphabet sorting in ascending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting in ascending order is not passed.\n";
+	$error = true;
 }
 
 if($descendingSortedArray == Sorting::descendingOrder($array)){
 	echo "Testing Myanmar alphabet sorting in descending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting in descending order is not passed.\n";
+	$error = true;
 }
 
 if($ascendingMultiDimensioanlArray == Sorting::ascendingMulti($multiDimensionalArray,'name')){
 	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in ascending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in ascending order is not passed.\n";
+	$error = true;
 }
 
 if($descendingMultiDimensioanlArray == Sorting::descendingMulti($multiDimensionalArray,'name')){
 	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in descending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting by field name in multi dimensioanl array in descending order is not passed.\n";
+	$error = true;
 }
 
 if($ascendingDuplicatedMultiDimensionalArray == Sorting::ascendingMulti($duplicatedMultiDimensionalArray,'name')){
 	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in ascending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in ascending order is not passed.\n";
+	$error = true;
 }
 
 if($descendingDuplicatedMultiDimensionalArray == Sorting::descendingMulti($duplicatedMultiDimensionalArray,'name')){
 	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in descending order is passed.\n";
+} else {
+	echo "Testing Myanmar alphabet sorting by field name in duplicated value in multi dimensioanl array in descending order is not passed.\n";
+	$error = true;
 }
 
+if ( !$error ) {
+	exit(0);
+}
+exit(1);

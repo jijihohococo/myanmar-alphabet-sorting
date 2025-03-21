@@ -1,0 +1,37 @@
+name: PHP Tests
+
+on:
+  push:
+    branches:
+      - '*'  # Trigger on push to any branch
+  pull_request:
+    branches:
+      - '*'  # Trigger on PR to any branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # You can also use windows-latest or macos-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up PHP
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'  # Use the PHP version required for your tests
+          extensions: mbstring, xml, curl  # Add any PHP extensions you need
+
+      # Step 3: Install dependencies (if using Composer)
+      - name: Install dependencies
+        run: |
+          curl -sS https://getcomposer.org/installer | php
+          php composer.phar install
+
+      # Step 4: Run your custom PHP test file
+      - name: Run custom PHP test
+        run: |
+          # Run your custom PHP test script
+          php test/index.php
