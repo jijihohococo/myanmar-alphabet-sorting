@@ -10,7 +10,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest  # You can also use windows-latest or macos-latest
+    runs-on: ubuntu-latest  # This sets up a job to run on the latest version of Ubuntu
 
     steps:
       # Step 1: Checkout the repository
@@ -24,14 +24,13 @@ jobs:
           php-version: '7.4'  # Use the PHP version required for your tests
           extensions: mbstring, xml, curl  # Add any PHP extensions you need
 
-      # Step 3: Install dependencies (if using Composer)
-      - name: Install dependencies
+      # Step 3: Update dependencies
+      - name: Run Composer update
         run: |
           curl -sS https://getcomposer.org/installer | php
-          php composer.phar install
+          php composer.phar update --with-all-dependencies  # Update dependencies
 
       # Step 4: Run your custom PHP test file
       - name: Run custom PHP test
         run: |
-          # Run your custom PHP test script
           php test/index.php
