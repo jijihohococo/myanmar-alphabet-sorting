@@ -29,7 +29,7 @@ composer require jijihohococo/myanmar-alphabet-sorting
 
 ```php
 use JiJiHoHoCoCo\MyanmarAlphabetSorting\Sorting;
-$array=[ "က",
+$array = [ "က",
 "ကား",
 "ကိ",
 "ကီ",
@@ -49,7 +49,7 @@ Sorting::descendingOrder($array);
 <p>You can sort Myanmar Alphabets by field name in multi dimensional array with both ascending and descending order.</p>
 
 ```php
-$multiDimensionalArray=[
+$multiDimensionalArray = [
 ['name'=>'ကေကေ',"age"=>'12'],
 ['name'=>'ကီကီ','age'=>'14'],
 ['name'=>'ကူးကူး','age'=>'13']
@@ -62,7 +62,7 @@ Sorting::descendingMulti($multiDimensionalArray,'name');
 <p>You can also sort Myanmar Alphabets by field name which might include duplicated value sometimes in multi dimensional array with both ascending and descending order.</p>
 
 ```php
-$duplicatedMultiDimensionalArray=[
+$duplicatedMultiDimensionalArray = [
 ['name'=>'ကေကေ',"age"=>'12'],
 ['name'=>'ကီကီ','age'=>'14'],
 ['name'=>'ကူးကူး','age'=>'13'],
